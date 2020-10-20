@@ -4,8 +4,7 @@ export default function Footer() {
     return (
         <div className="footer">
             <nav
-                className="navbar fixed-bottom navbar-dark justify-content-center"
-            >
+                className="navbar fixed-bottom navbar-dark justify-content-center">
                 <a className="navbar-brand" href="https://github.com/sushmakaluva"
                 ><i className="fa fa-github fa-lg"></i
                 ></a>
@@ -13,6 +12,11 @@ export default function Footer() {
                     className="navbar-brand"
                     href="https://www.linkedin.com/in/sushma-reddy-kaluva/"
                 ><i className="fa fa-linkedin-square fa-lg"></i
+                ></a>
+                <a
+                    className="navbar-brand"
+                    href="kaluvasushma@gmail.com"
+                ><i className="fa fa-envelope fa-lg"></i
                 ></a>
             </nav>
         </div>

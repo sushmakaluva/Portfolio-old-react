@@ -92,8 +92,8 @@ const Projects = () => {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  alt="Project 1"
-                  height="140"
+                  alt="Project image"
+                  height="150"
                   image={project.image}
                 />
                 <CardContent>
