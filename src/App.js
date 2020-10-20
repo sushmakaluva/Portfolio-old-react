@@ -5,22 +5,27 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Resume from "./components/Resume";
 
 function App() {
+  const appStyle = {
+    backgroundImage: "linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%)"
+  }
   return (
-    <Router>
-    <div>
+    <React.Fragment>
+      <CssBaseline />
       <Navbar />
-      <Wrapper>
+      <Router>
         <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={Home} />
+        <Route exact path="/home" component={Home} />
         <Route exact path="/projects" component={Projects} />
+        <Route exact path="/resume" component={Resume} />
         <Route exact path="/contact" component={Contact} />
-      </Wrapper>
+      </Router>
       <Footer />
-    </div>
-    </Router>
+    </React.Fragment >
+
   );
 }
 

@@ -11,26 +11,24 @@ function Navbar() {
 
     return (
         <Router>
-            <MDBNavbar color="black" light expand="md">
+            <MDBNavbar className="header" expand="md">
                 <MDBNavbarBrand>
-                    <strong className="white-text">Sushma Reddy Kaluva</strong>
+                    <strong className="text">Sushma Reddy Kaluva</strong>
                 </MDBNavbarBrand>
                 <MDBNavbarToggler />
                 <MDBCollapse id="navbarCollapse3" navbar>
                     <MDBNavbarNav right>
-                    </MDBNavbarNav>
-                    <MDBNavbarNav right>
                         <MDBNavItem active>
-                            <MDBNavLink to="#!">Home</MDBNavLink>
+                            <MDBNavLink to="/home">Home</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="#!">Projects</MDBNavLink>
+                            <MDBNavLink to="/projects">Projects</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="#!">Resume</MDBNavLink>
+                            <MDBNavLink to="/resume">Resume</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="#!">Contact</MDBNavLink>
+                            <MDBNavLink to="/contact">Contact</MDBNavLink>
                         </MDBNavItem>
 
 
