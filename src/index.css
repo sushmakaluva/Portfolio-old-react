@@ -3,7 +3,6 @@
 }
 
 html,
-body,
 #root,
 #root > div,
 div[data-reactroot] {
@@ -12,20 +11,4 @@ div[data-reactroot] {
   margin: 0;
 }
 
-.header{
-  
-  padding: 1rem;
-  width: 100%;
-  top:0;
-}
 
-.footer {
-  margin-top: 1rem;
-  padding: 1rem;
-
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}

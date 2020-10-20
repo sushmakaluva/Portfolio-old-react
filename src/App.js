@@ -1,19 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./components";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Resume from "./components/Resume";
+import "./App.css";
+
 
 function App() {
-  const appStyle = {
-    backgroundImage: "linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%)"
-  }
   return (
-    <React.Fragment>
+    <div>
       <CssBaseline />
       <Navbar />
       <Router>
@@ -24,8 +23,7 @@ function App() {
         <Route exact path="/contact" component={Contact} />
       </Router>
       <Footer />
-    </React.Fragment >
-
+    </div>
   );
 }
 

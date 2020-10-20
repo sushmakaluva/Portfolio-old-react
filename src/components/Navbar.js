@@ -6,32 +6,30 @@ import {
 import { BrowserRouter as Router } from 'react-router-dom';
 
 function Navbar() {
-
-
-
+    const navStyle={
+        color:"tan",
+    }
     return (
         <Router>
-            <MDBNavbar className="header" expand="md">
+            <MDBNavbar style={{backgroundColor:"#1f2421"}} expand="md">
                 <MDBNavbarBrand>
-                    <strong className="text">Sushma Reddy Kaluva</strong>
+                    <a className="navbar-brand" href="/home"> <strong className="text" style={navStyle}>Sushma Reddy Kaluva</strong></a>
                 </MDBNavbarBrand>
                 <MDBNavbarToggler />
                 <MDBCollapse id="navbarCollapse3" navbar>
                     <MDBNavbarNav right>
                         <MDBNavItem active>
-                            <MDBNavLink to="/home">Home</MDBNavLink>
+                            <MDBNavLink to="/home" onClick={() => {window.location.href="/home"}} style={navStyle}><b>Home</b></MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="/projects">Projects</MDBNavLink>
+                            <MDBNavLink to="/projects" onClick={() => {window.location.href="/projects"}} style={navStyle}><b>Projects</b></MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="/resume">Resume</MDBNavLink>
+                            <MDBNavLink to="/resume" onClick={() => {window.location.href="/resume"}} style={navStyle}><b>Resume</b></MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="/contact">Contact</MDBNavLink>
+                            <MDBNavLink to="/contact" onClick={() => {window.location.href="/contact"}} style={navStyle}><b>Contact</b></MDBNavLink>
                         </MDBNavItem>
-
-
                     </MDBNavbarNav>
                 </MDBCollapse>
             </MDBNavbar>
