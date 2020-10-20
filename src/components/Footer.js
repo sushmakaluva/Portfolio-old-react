@@ -15,7 +15,7 @@ export default function Footer() {
                 ></a>
                 <a
                     className="navbar-brand"
-                    href="kaluvasushma@gmail.com"
+                    href="mailto:kaluvasushma@gmail.com?Subject=Hello Sushma&Body=I would like to get in touch !"
                 ><i className="fa fa-envelope fa-lg"></i
                 ></a>
             </nav>

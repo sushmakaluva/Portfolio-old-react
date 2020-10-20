@@ -71,50 +71,52 @@ const Contact = () => {
                         Hire or Contact me...
                     </Typography>
                     <p style={{ color: "tan" }}>
-                        Whether you want to get in touch, talk about a project collaboration,
-                        or just say hi, I'd love to hear from you.
-                        Simply fill the from and send me an email.
+                        <i>
+                            Whether you want to get in touch, talk about a project collaboration,
+                            or just say hi, I'd love to hear from you.
+                            Simply fill the from and send me an email.
+                        </i>
                     </p>
 
                     <form action="https://formspree.io/f/mjvpwyzz" method="POST">
-                    <InputField
-                        fullWidth={true}
-                        label="Name"
-                        name="Name"
-                        variant="outlined"
-                        inputProps={{ className: classes.input }}
-                    />
-                    <InputField
-                        fullWidth={true}
-                        label="Email"
-                        name="Email"
-                        variant="outlined"
-                        inputProps={{ className: classes.input }}
-                        className={classes.field}
-                    />
-                    <InputField
-                        fullWidth={true}
-                        label="Message"
-                        name="Message"
-                        variant="outlined"
-                        multiline
-                        rows={4}
-                        inputProps={{ className: classes.input }}
-                    />
-                    <Button
-                        variant="outlined"
-                        fullWidth={true}
-                        endIcon={<Send />}
-                        className={classes.button}
-                        type="submit"
-                    >
-                        Contact Me
+                        <InputField
+                            fullWidth={true}
+                            label="Name"
+                            name="Name"
+                            variant="outlined"
+                            inputProps={{ className: classes.input }}
+                        />
+                        <InputField
+                            fullWidth={true}
+                            label="Email"
+                            name="Email"
+                            variant="outlined"
+                            inputProps={{ className: classes.input }}
+                            className={classes.field}
+                        />
+                        <InputField
+                            fullWidth={true}
+                            label="Message"
+                            name="Message"
+                            variant="outlined"
+                            multiline
+                            rows={4}
+                            inputProps={{ className: classes.input }}
+                        />
+                        <Button
+                            variant="outlined"
+                            fullWidth={true}
+                            endIcon={<Send />}
+                            className={classes.button}
+                            type="submit"
+                        >
+                            Contact Me
                    </Button>
-                 </form>
-                    </Box>
-                </Grid>
-            </Box >
-        
+                    </form>
+                </Box>
+            </Grid>
+        </Box >
+
     );
 };
 

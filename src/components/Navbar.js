@@ -22,6 +22,9 @@ function Navbar() {
                             <MDBNavLink to="/home" onClick={() => {window.location.href="/home"}} style={navStyle}><b>Home</b></MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
+                            <MDBNavLink to="/projects" onClick={() => {window.location.href="/about"}} style={navStyle}><b>About</b></MDBNavLink>
+                        </MDBNavItem>
+                        <MDBNavItem>
                             <MDBNavLink to="/projects" onClick={() => {window.location.href="/projects"}} style={navStyle}><b>Projects</b></MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
